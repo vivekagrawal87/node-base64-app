@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Base64 Encoder/Decoder</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        {{>header}}
+        <div>
+            <p id="validation-message-encode"></p>
+            <form id="encode-form">
+            <textarea id="input-decoded" placeholder="Enter your input string here..." rows="5" cols="100"></textarea>
+            <button>Encode</button>
+            </form>
+            <textarea id="result-encoded" placeholder="Output will be displayed here...." rows="5" cols="100"></textarea>
+        </div>
+        {{>footer}}
+
+        <script src="/js/encode.js"></script>
+    </body>
+</html>
