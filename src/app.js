@@ -19,15 +19,11 @@ app.use(express.json())
 app.use('/base64', base64Router)
 
 app.get('', (req, res) => {
-    res.render('index', {
-        title: 'Base64 Encode'
-    })
+    res.render('index')
 })
 
 app.get('/decode', (req, res)=>{
-    res.render('decode', {
-        title:'Base64 Decode'
-    })
+    res.render('decode')
 })
 
 app.listen('3000', () => console.log('Listening to 3000!'))

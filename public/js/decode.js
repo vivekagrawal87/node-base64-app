@@ -9,7 +9,7 @@ decodeForm.addEventListener('submit', (e) => {
     const encodedInput = stringToDecode.value
 
     if (encodedInput == '') {
-        validationMessageDecoded.textContent = 'Enter Base64 Encoded String'
+        validationMessageDecoded.textContent = 'Enter input string'
         return
     }
 

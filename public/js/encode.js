@@ -9,7 +9,7 @@ encodeForm.addEventListener('submit', (e) => {
     const userInput = stringToEncode.value
 
     if (userInput == '') {
-        validationMessageEncoded.textContent = 'Enter String to Encode'
+        validationMessageEncoded.textContent = 'Enter input string'
         return
     }
 

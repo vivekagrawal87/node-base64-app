@@ -4,6 +4,68 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+textarea {
+    border-radius: 0;
+    margin: 1rem 1rem 1rem 0;
+    padding: 5px;
+}
+
 button {
+    border-radius: 0;
     display: block;
+    min-height: 50px;
+    min-width: 100px;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+
+a:hover {
+    /* to decide*/
+}
+
+a:visited {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 1rem;
+    background-color: #F5F5F7;
+    text-align: left;
+}
+
+.header__links{
+    margin-top: 5px;
+}
+
+.footer {
+    padding: 1rem;
+    background-color: #F5F5F7;
+    text-align: left;
+    color: gray;
+}
+
+.content {
+    flex-grow: 3;
+    padding: 1rem;
+}
+
+#validation-message-encode, #validation-message-decode {
+    color: #ff0000;
 }

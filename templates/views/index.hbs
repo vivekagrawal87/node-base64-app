@@ -3,17 +3,21 @@
         <title>Base64 Encoder/Decoder</title>
         <link rel="stylesheet" href="/css/styles.css">
     </head>
-    <body>
-        {{>header}}
-        <div>
+    <body class="container">
+        <div class="header">
+            {{>header}}
+        </div>
+        <div class="content">
             <p id="validation-message-encode"></p>
             <form id="encode-form">
-            <textarea id="input-decoded" placeholder="Enter your input string here..." rows="5" cols="100"></textarea>
+            <textarea id="input-decoded" placeholder="Enter string for encode" rows="5" cols="100"></textarea>
             <button>Encode</button>
             </form>
-            <textarea id="result-encoded" placeholder="Output will be displayed here...." rows="5" cols="100"></textarea>
+            <textarea disabled id="result-encoded" placeholder="Output will be displayed here" rows="5" cols="100"></textarea>
         </div>
-        {{>footer}}
+        <div class="footer">
+            {{>footer}}
+        </div>
 
         <script src="/js/encode.js"></script>
     </body>
